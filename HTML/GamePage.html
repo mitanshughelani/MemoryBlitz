@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepage</title>
+    <link rel="stylesheet" href="../CSS/GamePage.css">
+    <script src="../JS/Backend.js"></script>
+
+</head>
+
+<body>
+
+    <header class="container">
+
+        <a href="../HTML/Home Page.html"> <img src="../images/logo.jpg" alt="logo" class="logo"> </a>
+        <span class="center">Number Sequence Game</span>
+        <span class="right" id="score">Score - 0</span>
+
+    </header>
+    <hr><br>
+
+    <div id="problem" class="problem">
+        <p id = "randomNum"> </p>
+    </div><br><br><br><br><br>
+
+    <div class="inputarea" id="input">
+        <!-- <p id="enter">Enter the values :</p> -->
+        <input type="text" oncopy="return false;" onpaste="return false;" id="guess" placeholder="Use space to seperate the enter values!">
+    </div>
+
+    <br><br>
+
+    <p id="button"><button id="start" onclick="randomNum()">Start</button>
+    <button id="submit" onclick="submit()">Submit</button></p>
+
+    <br><br>
+
+    <footer>
+        <button class="help" onclick="help()">?</button>
+        <span class="footer">&copy; Red Hat Gamers</span>
+        <button class="exit" onclick="exit()">Exit</button>
+    </footer>
+
+
+</body>
+
+</html>
